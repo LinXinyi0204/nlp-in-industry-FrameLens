@@ -104,14 +104,9 @@ def run(work, question_en, question_zh):
     
     return result
 
-# add more questions here once B finishes designing them
-questions = [
-    {
-        "work": "Journey to the West",
-        "question_en": "What is the core conflict in Journey to the West?",
-        "question_zh": "《西游记》的核心冲突是什么？"
-    },
-]
+# read the questions
+with open("questions.json", "r", encoding="utf-8") as f:
+    questions = json.load(f)
 
 # run all questions
 all_results = []
