@@ -51,9 +51,9 @@ result = run_question(
 )
 
 
-print("\n--- ChatGPT 回答 ---")
+print("\n--- ChatGPT answer ---")
 print(result["chatgpt_answer"])
-print("\n--- DeepSeek 回答 ---")
+print("\n--- DeepSeek answer ---")
 print(result["deepseek_answer"])
 
 

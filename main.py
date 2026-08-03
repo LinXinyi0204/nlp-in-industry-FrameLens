@@ -89,8 +89,8 @@ Respond ONLY in this exact JSON format:
     result_text = result_text.strip().removeprefix("```json").removesuffix("```").strip()
     return json.loads(result_text)
     
-def run(work, question_en, question_zh):
-    print(f"Processing: {work}")
+def run(work, question_en, question_zh, question_type="general"):
+    print(f"Processing: {work} | {question_type}")
     
     chatgpt_answer = ask_chatgpt(question_en)
     deepseek_answer = ask_deepseek(question_zh)
@@ -98,6 +98,7 @@ def run(work, question_en, question_zh):
     
     result = {
         "work": work,
+        "question_type": question_type,
         "question_en": question_en,
         "question_zh": question_zh,
         "chatgpt_answer": chatgpt_answer,
@@ -114,9 +115,22 @@ with open("questions.json", "r", encoding="utf-8") as f:
 # run all questions
 all_results = []
 for q in questions:
-    result = run(q["work"], q["question_en"], q["question_zh"])
-    all_results.append(result)
-    print(f"Done: {q['work']} | Total score: {result['scores']['total']}/10")
+    work = q["work"]
+    
+    # run fact question
+    result_fact = run(work, q["fact_question_en"], q["fact_question_zh"], "fact")
+    all_results.append(result_fact)
+    print(f"Done: {work} | fact | Total score: {result_fact['scores']['total']}/10")
+    
+    # run broad question
+    result_broad = run(work, q["broad_question_en"], q["broad_question_zh"], "broad")
+    all_results.append(result_broad)
+    print(f"Done: {work} | broad | Total score: {result_broad['scores']['total']}/10")
+    
+    # run focused question
+    result_focused = run(work, q["focused_question_en"], q["focused_question_zh"], "focused")
+    all_results.append(result_focused)
+    print(f"Done: {work} | focused | Total score: {result_focused['scores']['total']}/10")
 
 # save all results
 with open("results.json", "w", encoding="utf-8") as f:
