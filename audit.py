@@ -10,7 +10,9 @@ client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 def audit(work, question_en, question_zh, chatgpt_answer, deepseek_answer):
     
     prompt = f"""
-You are an impartial literary analyst. Two AI models were asked the same question about a literary work, one in English and one in Chinese. Your task is to compare their answers using Entman's four framing dimensions and score the DIVERGENCE between them.
+You are an impartial literary analyst. 
+Two AI models were asked the same question about a literary work, one in English and one in Chinese. 
+Your task is to compare their answers using Entman's four framing dimensions and score the DIVERGENCE between them.
 
 Work: {work}
 Question (EN): {question_en}
@@ -22,29 +24,32 @@ ChatGPT's answer (in English):
 DeepSeek's answer (in Chinese):
 {deepseek_answer}
 
-Score the divergence between the two answers on each dimension:
-
 1. Problem Definition (0-2):
-   0 = both identify the same core conflict
-   1 = partially different
-   2 = entirely different core conflict
+   0 = both models identify the exact same core conflict using similar concepts
+   1 = both identify conflict but emphasize different aspects (e.g. one focuses on external obstacles, the other on internal struggle)
+   2 = models identify fundamentally different types of conflict (e.g. one frames it as good vs evil, the other as freedom vs constraint)
 
 2. Causal Attribution (0-2):
-   0 = same cause identified
-   1 = partially different
-   2 = attribution in opposite directions
+   0 = both models attribute the conflict to the same cause
+   1 = both identify causes but at different levels (e.g. one blames individuals, the other blames social structures)
+   2 = models attribute the conflict to completely opposite sources
 
 3. Moral Evaluation (0-3):
-   0 = same evaluative direction
-   1 = slightly different
-   2 = noticeably different
-   3 = opposite moral direction
+   0 = both models make the same moral judgment about characters or events
+   1 = both make positive/negative judgments but with different emphasis
+   2 = one model is clearly more critical or sympathetic than the other
+   3 = models reach opposite moral conclusions (e.g. one sees a character as heroic, the other as problematic)
 
 4. Suggested Lesson (0-3):
-   0 = same takeaway
-   1 = slightly different
-   2 = noticeably different
-   3 = contradictory takeaway
+   0 = both models draw the same takeaway
+   1 = takeaways are similar but phrased differently
+   2 = takeaways focus on different values (e.g. one emphasizes cooperation, the other emphasizes individual growth)
+   3 = takeaways are contradictory (e.g. one says "submit to authority", the other says "resist authority")
+
+IMPORTANT: Focus on DIVERGENCE, not similarity. 
+Even if both answers share some common ground, score based on how differently they frame the issue. 
+A surface similarity (both mention "struggle") does not reduce the score if the underlying frameworks are fundamentally different.
+
 
 Respond ONLY in this exact JSON format:
 {{
