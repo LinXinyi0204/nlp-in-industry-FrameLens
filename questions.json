@@ -1,9 +1,47 @@
 [
   {
+    "work": "Romeo and Juliet",
+    "fact_question_en": "How did Romeo and Juliet ultimately die? What is the specific course of events leading to their deaths?",
+    "fact_question_zh": "罗密欧与朱丽叶最终是如何死的？两人死亡的具体经过是什么？",
+    "broad_question_en": "What is the root cause of the tragic love story of Romeo and Juliet?",
+    "broad_question_zh": "罗密欧与朱丽叶的爱情悲剧，其根本原因是什么？",
+    "focused_question_en": "How would you evaluate Romeo and Juliet's decision to die together at the end?",
+    "focused_question_zh": "如何评价罗密欧与朱丽叶最终选择殉情这一行为？"
+  },
+  {
     "work": "Journey to the West",
-    "question_en": "What is the core conflict in Journey to the West?",
-    "question_zh": "《西游记》的核心冲突是什么？",
-    "control_en": "Who are the four main characters in Journey to the West?",
-    "control_zh": "《西游记》的四位主要人物是谁？"
+    "fact_question_en": "How was Sun Wukong imprisoned under Five Elements Mountain? And how was he later rescued by Tang Sanzang?",
+    "fact_question_zh": "孙悟空是如何被压在五行山下的？又是如何被唐僧救出的？",
+    "broad_question_en": "What is the core significance of the pilgrimage undertaken by Tang Sanzang and his three disciples to obtain the Buddhist scriptures?",
+    "broad_question_zh": "唐僧师徒四人西天取经这段经历，其核心意义是什么？",
+    "focused_question_en": "How would you evaluate Sun Wukong's transformation from being imprisoned under Five Elements Mountain after his havoc in Heaven, to ultimately being bestowed the title of Buddha Victorious in Strife?",
+    "focused_question_zh": "如何评价孙悟空从大闹天宫被压五行山，到最终被封为斗战胜佛这一转变？"
+  },
+  {
+    "work": "Dream of the Red Chamber",
+    "fact_question_en": "What object was Jia Baoyu born with in his mouth?",
+    "fact_question_zh": "贾宝玉出生时口中衔着的东西是什么？",
+    "broad_question_en": "What is the core significance of the process by which the Jia family declines from prosperity to ruin?",
+    "broad_question_zh": "贾府由盛转衰的整个过程，其核心意义是什么？",
+    "focused_question_en": "Jia Baoyu ultimately chooses to leave his family and become a monk. How would you evaluate this choice?",
+    "focused_question_zh": "贾宝玉最终选择出家离开家庭，如何评价他这一选择？"
+  },
+  {
+    "work": "Wuthering Heights",
+    "fact_question_en": "How did Heathcliff, as a young child, come to Wuthering Heights and become an adopted member of the Earnshaw family?",
+    "fact_question_zh": "希斯克利夫年幼时是如何来到呼啸山庄、成为恩肖家养子的？",
+    "broad_question_en": "What is the central conflict of Wuthering Heights?",
+    "broad_question_zh": "呼啸山庄这部小说的核心冲突是什么？",
+    "focused_question_en": "How would you evaluate the revenge Heathcliff inflicts on the second generation, including Hareton and young Catherine?",
+    "focused_question_zh": "希斯克利夫对第二代人（哈里顿、小凯茜等）实施的报复，如何评价这一行为？"
+  },
+  {
+    "work": "Don Quixote",
+    "fact_question_en": "How did Don Quixote decide to become a knight and begin his adventures?",
+    "fact_question_zh": "堂吉诃德是如何决定成为骑士、开始他的冒险的？",
+    "broad_question_en": "What is the core significance of the novel Don Quixote?",
+    "broad_question_zh": "堂吉诃德这部小说的核心意义是什么？",
+    "focused_question_en": "How would you evaluate Don Quixote's continuing to act according to the code of chivalry, despite repeated failures and public ridicule?",
+    "focused_question_zh": "如何评价堂吉诃德坚持按骑士小说的方式行事，即便屡屡碰壁、被现实嘲笑？"
   }
 ]
