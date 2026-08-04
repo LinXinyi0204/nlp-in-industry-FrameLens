@@ -1,21 +1,25 @@
 [
   {
     "work": "Romeo and Juliet",
-    "fact_question_en": "How did Romeo and Juliet ultimately die? What is the specific course of events leading to their deaths?",
-    "fact_question_zh": "罗密欧与朱丽叶最终是如何死的？两人死亡的具体经过是什么？",
+    "fact_question_en": "By what method did Romeo die, and by what method did Juliet die?",
+    "fact_question_zh": "罗密欧和朱丽叶各自是用什么方式死的？",
     "broad_question_en": "What is the root cause of the tragic love story of Romeo and Juliet?",
     "broad_question_zh": "罗密欧与朱丽叶的爱情悲剧，其根本原因是什么？",
-    "focused_question_en": "How would you evaluate Romeo and Juliet's decision to die together at the end?",
-    "focused_question_zh": "如何评价罗密欧与朱丽叶最终选择殉情这一行为？"
+    "focused_question_en": "Romeo took poison without seeing Juliet's body or waiting for confirmation from Friar Laurence. How would you evaluate this decision?",
+    "focused_question_zh": "罗密欧在没有见到朱丽叶遗体、也没有等待劳伦斯神父确认消息的情况下，就服毒自尽，你如何评价他这个决定？",
+    "comparison_en": "Please compare how Chinese literary tradition and English literary tradition differ in evaluating Romeo's decision to take poison without seeing Juliet's body or waiting for confirmation from Friar Laurence.",
+    "comparison_zh": "请比较中文文献传统与英文文献传统，在评价罗密欧未见朱丽叶遗体、也未等待劳伦斯神父确认消息便服毒自尽这一行为上，主要存在哪些差异？"
   },
   {
     "work": "Journey to the West",
-    "fact_question_en": "How was Sun Wukong imprisoned under Five Elements Mountain? And how was he later rescued by Tang Sanzang?",
-    "fact_question_zh": "孙悟空是如何被压在五行山下的？又是如何被唐僧救出的？",
+    "fact_question_en": "How many years was Sun Wukong imprisoned under Five Elements Mountain?",
+    "fact_question_zh": "孙悟空被压在五行山下多少年？",
     "broad_question_en": "What is the core significance of the pilgrimage undertaken by Tang Sanzang and his three disciples to obtain the Buddhist scriptures?",
     "broad_question_zh": "唐僧师徒四人西天取经这段经历，其核心意义是什么？",
     "focused_question_en": "How would you evaluate Sun Wukong's transformation from being imprisoned under Five Elements Mountain after his havoc in Heaven, to ultimately being bestowed the title of Buddha Victorious in Strife?",
-    "focused_question_zh": "如何评价孙悟空从大闹天宫被压五行山，到最终被封为斗战胜佛这一转变？"
+    "focused_question_zh": "如何评价孙悟空从大闹天宫被压五行山，到最终被封为斗战胜佛这一转变？",
+    "comparison_en": "Please compare how Chinese literary tradition and English literary tradition differ in evaluating Sun Wukong's transformation from his havoc in Heaven to ultimately becoming the Buddha Victorious in Strife.",
+    "comparison_zh": "请比较中文文献传统与英文文献传统，在评价孙悟空从大闹天宫到最终被封为斗战胜佛这一转变上，主要存在哪些差异？"
   },
   {
     "work": "Dream of the Red Chamber",
@@ -23,25 +27,31 @@
     "fact_question_zh": "贾宝玉出生时口中衔着的东西是什么？",
     "broad_question_en": "What is the core significance of the process by which the Jia family declines from prosperity to ruin?",
     "broad_question_zh": "贾府由盛转衰的整个过程，其核心意义是什么？",
-    "focused_question_en": "Jia Baoyu ultimately chooses to leave his family and become a monk. How would you evaluate this choice?",
-    "focused_question_zh": "贾宝玉最终选择出家离开家庭，如何评价他这一选择？"
+    "focused_question_en": "Even while gravely ill, Qingwen stays up all night mending Baoyu's peacock-feather cloak. How would you evaluate Baoyu's acceptance of her doing this for him while she is so sick?",
+    "focused_question_zh": "晴雯病重之际，仍连夜为宝玉缝补烧坏的雀金裘。你如何评价宝玉接受晴雯在病中为他做这件事？",
+    "comparison_en": "Please compare how Chinese literary tradition and English literary tradition differ in evaluating Baoyu's acceptance of the gravely ill Qingwen mending his peacock-feather cloak overnight while she is gravely ill.",
+    "comparison_zh": "请比较中文文献传统与英文文献传统，在评价贾宝玉接受重病中的晴雯为他连夜缝补雀金裘这件事上，主要存在哪些差异？"
   },
   {
     "work": "Wuthering Heights",
-    "fact_question_en": "How did Heathcliff, as a young child, come to Wuthering Heights and become an adopted member of the Earnshaw family?",
-    "fact_question_zh": "希斯克利夫年幼时是如何来到呼啸山庄、成为恩肖家养子的？",
+    "fact_question_en": "In which city did Mr. Earnshaw find the boy?",
+    "fact_question_zh": "老恩肖先生是在哪个城市发现这个男孩的？",
     "broad_question_en": "What is the central conflict of Wuthering Heights?",
     "broad_question_zh": "呼啸山庄这部小说的核心冲突是什么？",
-    "focused_question_en": "How would you evaluate the revenge Heathcliff inflicts on the second generation, including Hareton and young Catherine?",
-    "focused_question_zh": "希斯克利夫对第二代人（哈里顿、小凯茜等）实施的报复，如何评价这一行为？"
+    "focused_question_en": "After witnessing Hareton and young Catherine fall in love, Heathcliff stops harming them, and shortly afterward dies after refusing to eat. How would you evaluate this sequence of actions?",
+    "focused_question_zh": "希斯克利夫在看到哈里顿与小凯茜相爱后停止了对他们的伤害，此后不久便绝食而死。你如何评价他的这一系列举动？",
+    "comparison_en": "Please compare how Chinese literary tradition and English literary tradition differ in evaluating Heathcliff's decision to stop harming Hareton and young Catherine after witnessing their love, and his subsequent death by refusing to eat.",
+    "comparison_zh": "请比较中文文献传统与英文文献传统，在评价希斯克利夫在目睹哈里顿与小凯茜相爱后停止伤害他们、并在此后不久绝食而死这一系列举动上，主要存在哪些差异？"
   },
   {
     "work": "Don Quixote",
-    "fact_question_en": "How did Don Quixote decide to become a knight and begin his adventures?",
-    "fact_question_zh": "堂吉诃德是如何决定成为骑士、开始他的冒险的？",
+    "fact_question_en": "What name did Don Quixote give his horse?",
+    "fact_question_zh": "堂吉诃德给自己的马起了什么名字？",
     "broad_question_en": "What is the core significance of the novel Don Quixote?",
     "broad_question_zh": "堂吉诃德这部小说的核心意义是什么？",
     "focused_question_en": "How would you evaluate Don Quixote's continuing to act according to the code of chivalry, despite repeated failures and public ridicule?",
-    "focused_question_zh": "如何评价堂吉诃德坚持按骑士小说的方式行事，即便屡屡碰壁、被现实嘲笑？"
+    "focused_question_zh": "如何评价堂吉诃德坚持按骑士小说的方式行事，即便屡屡碰壁、被现实嘲笑？",
+    "comparison_en": "Please compare how Chinese literary tradition and English literary tradition differ in evaluating Don Quixote's continuing to act according to the code of chivalry.",
+    "comparison_zh": "请比较中文文献传统与英文文献传统，在评价堂吉诃德坚持按骑士小说方式行事这一点上，主要存在哪些差异？"
   }
 ]
