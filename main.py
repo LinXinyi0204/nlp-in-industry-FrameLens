@@ -183,20 +183,9 @@ all_results = []
 for q in questions:
     work = q["work"]
     
-    # fact question: verify consistency only, no Entman scoring
-    chatgpt_fact = ask_chatgpt(q["fact_question_en"], question_type="fact")
-    deepseek_fact = ask_deepseek(q["fact_question_zh"], question_type="fact")
-    fact_check = verify_fact(work, q["fact_question_en"], q["fact_question_zh"], chatgpt_fact, deepseek_fact)
-    all_results.append({
-        "work": work,
-        "question_type": "fact",
-        "question_en": q["fact_question_en"],
-        "question_zh": q["fact_question_zh"],
-        "chatgpt_answer": chatgpt_fact,
-        "deepseek_answer": deepseek_fact,
-        "fact_check": fact_check
-    })
-    print(f"Done: {work} | fact | consistent: {fact_check}")
+    result_fact = run(work, q["fact_question_en"], q["fact_question_zh"], "fact")
+    all_results.append(result_fact)
+    print(f"Done: {work} | fact | Total score: {result_fact['scores']['total']}/12")
     
     # broad question
     result_broad = run(work, q["broad_question_en"], q["broad_question_zh"], "broad")
