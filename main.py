@@ -101,6 +101,7 @@ Respond ONLY in this exact JSON format:
     message = auditor.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=1024,
+        temperature=0.0,
         messages=[{"role": "user", "content": prompt}]
     )
     result_text = message.content[0].text
