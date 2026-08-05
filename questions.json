@@ -1,8 +1,8 @@
 [
   {
     "work": "Romeo and Juliet",
-    "fact_question_en": "By what method did Romeo die, and by what method did Juliet die?",
-    "fact_question_zh": "罗密欧和朱丽叶各自是用什么方式死的？",
+    "fact_question_en": "Who prepared the potion that caused Juliet's apparent death?",
+    "fact_question_zh": "朱丽叶假死时服下的药水，是谁配制给她的？",
     "broad_question_en": "What is the root cause of the tragic love story of Romeo and Juliet?",
     "broad_question_zh": "罗密欧与朱丽叶的爱情悲剧，其根本原因是什么？",
     "focused_question_en": "Romeo took poison without seeing Juliet's body or waiting for confirmation from Friar Laurence. How would you evaluate this decision?",
@@ -12,8 +12,8 @@
   },
   {
     "work": "Journey to the West",
-    "fact_question_en": "How many years was Sun Wukong imprisoned under Five Elements Mountain?",
-    "fact_question_zh": "孙悟空被压在五行山下多少年？",
+    "fact_question_en": "What is the name of Sun Wukong's weapon?",
+    "fact_question_zh": "孙悟空的兵器叫什么名字？",
     "broad_question_en": "What is the core significance of the pilgrimage undertaken by Tang Sanzang and his three disciples to obtain the Buddhist scriptures?",
     "broad_question_zh": "唐僧师徒四人西天取经这段经历，其核心意义是什么？",
     "focused_question_en": "How would you evaluate Sun Wukong's transformation from being imprisoned under Five Elements Mountain after his havoc in Heaven, to ultimately being bestowed the title of Buddha Victorious in Strife?",
@@ -49,9 +49,20 @@
     "fact_question_zh": "堂吉诃德给自己的马起了什么名字？",
     "broad_question_en": "What is the core significance of the novel Don Quixote?",
     "broad_question_zh": "堂吉诃德这部小说的核心意义是什么？",
-    "focused_question_en": "How would you evaluate Don Quixote's continuing to act according to the code of chivalry, despite repeated failures and public ridicule?",
-    "focused_question_zh": "如何评价堂吉诃德坚持按骑士小说的方式行事，即便屡屡碰壁、被现实嘲笑？",
-    "comparison_en": "Please compare how Chinese literary tradition and English literary tradition differ in evaluating Don Quixote's continuing to act according to the code of chivalry.",
-    "comparison_zh": "请比较中文文献传统与英文文献传统，在评价堂吉诃德坚持按骑士小说方式行事这一点上，主要存在哪些差异？"
+    "focused_question_en": "Just before his death, Don Quixote suddenly regains his sanity and renounces having ever been a knight. How would you evaluate this moment of \"lucidity\"?",
+    "focused_question_zh": "堂吉诃德临终前突然恢复理智、否认自己曾是骑士，如何评价这一刻的'清醒'？",
+    "comparison_en": "Please compare how Chinese literary tradition and English literary tradition differ in evaluating the moment when Don Quixote, just before his death, suddenly regains his sanity and renounces having ever been a knight.",
+    "comparison_zh": "请比较中文文献传统与英文文献传统，在评价堂吉诃德临终前突然恢复理智、否认自己曾是骑士这一时刻上，主要存在哪些差异？"
+  },
+  {
+    "work": "The Tale of the Bamboo Cutter",
+    "fact_question_en": "What kind of bamboo stalk did the bamboo cutter find Kaguya-hime inside?",
+    "fact_question_zh": "辉夜姬最初是在一根什么样的竹子里被发现的？",
+    "broad_question_en": "What is the core significance of the story of The Tale of the Bamboo Cutter?",
+    "broad_question_zh": "竹取物语这个故事的核心意义是什么？",
+    "focused_question_en": "Before being forced to return to the moon, Kaguya-hime leaves behind a letter and the elixir of immortality for the emperor, then tearfully bids farewell to her adoptive parents on Earth. How would you evaluate Kaguya-hime's attitude toward her time in the human world?",
+    "focused_question_zh": "辉夜姬在被迫返回月宫前，留下了一封书信和不死药给天皇，随后含泪告别了在人间的养父母。你如何评价辉夜姬对这段尘世生活的态度？",
+    "comparison_en": "Please compare how Chinese literary tradition and English literary tradition differ in evaluating Kaguya-hime's decision to leave behind a letter and the elixir of immortality for the emperor, and her tearful farewell to her adoptive parents on Earth.",
+    "comparison_zh": "请比较中文文献传统与英文文献传统，在评价辉夜姬留下书信与不死药给天皇、并含泪告别人间养父母这一系列举动上，主要存在哪些差异？"
   }
 ]
