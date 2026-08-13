@@ -79,6 +79,8 @@ Beyond serving as a general-purpose tool, this project systematically tested six
 
 **Synthesis quality**: across 12 synthesis outputs, attribution clarity averages 79% and information coverage averages 96%, cross-checked by manual review (six complete texts inspected, with results matching the automated evaluation).
 
+The project also includes a self-validation check comparing each model's self-reported understanding of its own interpretive tendencies against its actual behavior, which supports the choice to rely on direct paired responses rather than self-report as the primary evidence for framing divergence.
+
 📄 Full methodology, experimental design, and limitations are in the report.
 
 
