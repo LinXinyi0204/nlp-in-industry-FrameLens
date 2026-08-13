@@ -106,6 +106,15 @@ else:
     st.markdown("""
     <style>
     .stApp { background: #f8f9fb; }
+    .translation-box {
+        background: #e8f0fe;
+        border-left: 4px solid #2a78d6;
+        border-radius: 6px;
+        padding: 0.6rem 1rem;
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+        color: #1a3a6b;
+    }
     .syn-table {
         width: 100%;
         border-collapse: collapse;
@@ -178,20 +187,22 @@ else:
     st.markdown("Compare how **ChatGPT** (English) and **DeepSeek** (Chinese) interpret the same literary work.")
     st.divider()
 
-    col1, col2 = st.columns(2)
-    with col1:
-        work = st.text_input("Literary Work", placeholder="e.g. Dream of the Red Chamber")
-        question_en = st.text_area("Question (English, for ChatGPT)", placeholder="e.g. What is the core conflict in this work?", height=100)
-    with col2:
-        st.markdown("&nbsp;", unsafe_allow_html=True)
-        question_zh = st.text_area("Question (Chinese, for DeepSeek)", placeholder="e.g. 这部作品的核心冲突是什么？", height=100)
-
+    work = st.text_input("Literary Work", placeholder="e.g. Dream of the Red Chamber")
+    question_en = st.text_area("Question (in English)", placeholder="e.g. What is the core conflict in this work?", height=100)
+    st.caption("Your question will be automatically translated into Chinese for DeepSeek.")
     run = st.button("Analyze", type="primary", use_container_width=True)
 
     if run:
-        if not work or not question_en or not question_zh:
+        if not work or not question_en:
             st.error("Please fill in all fields.")
         else:
+            with st.spinner("Translating question to Chinese..."):
+                question_zh = chatgpt.chat.completions.create(
+                    model="gpt-4o",
+                    messages=[{"role": "user", "content": f"Translate the following literary analysis question into natural, idiomatic Chinese. Return only the translation, nothing else.\n\n{question_en}"}]
+                ).choices[0].message.content
+
+            st.markdown(f'<div class="translation-box">🈶 Auto-translated: {question_zh}</div>', unsafe_allow_html=True)
             with st.spinner("Querying ChatGPT and DeepSeek..."):
                 chatgpt_answer = chatgpt.chat.completions.create(
                     model="gpt-4o",
